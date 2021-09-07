@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>Forms</title>
 	<style>
-		body{
-			background-color: lightcyan;
+		table{
+			border-collapse: collapse;
 		}
 	</style>
 	<h1 style="color: lightblue; font-family: cursive;" 
@@ -15,12 +15,12 @@
 	<div>
 		<name>
 			<label>Name</label><label style="color: red;">*</label><br>
-			<input style="font-style: italic; border-color: yellow ; border-radius: 15px; width: 250px;" type="text" name="Name" placeholder="First Name">
-			<input style="font-style: italic; border-color: yellow ;border-radius: 15px; width: 250px;" type="text" name="Name" placeholder="Last Name"><br>
+			<input style="font-style: italic;  width: 250px;" type="text" name="Name" placeholder="First Name">
+			<input style="font-style: italic; width: 250px;" type="text" name="Name" placeholder="Last Name"><br>
 		</name>
 		<email>
 			<br><label>E-Mail</label><label style="color: red;">*</label><br>
-			<input style="border-color: yellow;border-radius: 15px;font-style: italic; width: 500px;" type="email" name="E-Mail" placeholder="example@gmail.com"><br>
+			<input style="font-style: italic; width: 500px;" type="email" name="E-Mail" placeholder="example@gmail.com"><br>
 		</email>
 		<experience>
 			<br><label>Experience</label><label style="color: red;">*</label><br>
@@ -28,44 +28,90 @@
 		</experience>
 		<br><label>Overall How would you rate your experience with us?</label><br>
 		<br><label style="font-weight: bold;font-family: sans-serif;">How satisfied are you with</label><label style="color: red;">*</label><br>
-		<table border="1px">
+		<table cellspacing="3px" cellpadding="5px" align="left">
 			<thead>
 			<tr>
-				<th> </th>
-				<th>Very Unsatisfied</th>
-				<th>Unsatisfied</th>
-				<th>Neutral</th>
-				<th>Satisfied</th>
-				<th>Very Satisfied</th>
+				<td> </td>
+				<td>Very Unsatisfied</td>
+				<td>Unsatisfied</td>
+				<td>Neutral</td>
+				<td>Satisfied</td>
+				<td>Very Satisfied</td>
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
+			<tr bgcolor="#D3D3D3" >
 				<td>Purchase</td>
-				<td></td>
-				<td></td><input type="radio" name="Purchase">
-				<td></td><input type="radio" name="Purchase">
-				<td></td><input type="radio" name="Purchase">
-				<td></td><input type="radio" name="Purchase">
+				<td align="center"><input type="radio" name="Purchase"></td>
+				<td align="center"><input type="radio" name="Purchase"></td>
+				<td align="center"><input type="radio" name="Purchase"></td>
+				<td align="center"><input type="radio" name="Purchase"></td>
+				<td align="center"><input type="radio" name="Purchase"></td>
 			</tr>
 			<tr>
 				<td>Service</td>
-				<td></td><input type="radio" name="Service">
-				<td> </td><input type="radio" name="Service">
-				<td></td><input type="radio" name="Service">
-				<td></td><input type="radio" name="Service">
-				<td></td><input type="radio" name="Service">
+				<td align="center"><input type="radio" name="Service"></td>
+				<td align="center"><input type="radio" name="Service"></td>
+				<td align="center"><input type="radio" name="Service"></td>
+				<td align="center"><input type="radio" name="Service"></td>
+				<td align="center"><input type="radio" name="Service"></td>
 			</tr>
-			<tr>
+			<tr bgcolor="#D3D3D3">
 				<td>Company Overall</td>
-				<td></td><input type="radio" name="Company Overall">
-				<td></td><input type="radio" name="Company Overall">
-				<td></td><input type="radio" name="Company Overall">
-				<td></td><input type="radio" name="Company Overall">
-				<td></td><input type="radio" name="Company Overall">
+				<td align="center"><input type="radio" name="Company Overall"></td>
+				<td align="center"><input type="radio" name="Company Overall"></td>
+				<td align="center"><input type="radio" name="Company Overall"></td>
+				<td align="center"><input type="radio" name="Company Overall"></td>
+				<td align="center"><input type="radio" name="Company Overall"></td>
 			</tr>
 		</tbody>
-		</table>
+		</table><br>
+		<br><br><br><br><br><br>
 	</div>
+	<div>
+			<br><label style="font-weight: bold;font-family: sans-serif;">How satisfied are you with</label><label style="color: red;">*</label><br>
+	</div>
+	<table cellspacing="3px" cellpadding="5px" align="left">
+			<thead>
+			<tr>
+				<td> </td>
+				<td>Very Unlikely</td>
+				<td>Unlikely</td>
+				<td>Neutral</td>
+				<td>Likely</td>
+				<td>Very Likely</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr bgcolor="#D3D3D3" >
+				<td cellspacing="2px">Buy from us again</td>
+				<td align="center"><input type="radio" name="Buy from us again"></td>
+				<td align="center"><input type="radio" name="Buy from us again"></td>
+				<td align="center"><input type="radio" name="Buy from us again"></td>
+				<td align="center"><input type="radio" name="Buy from us again"></td>
+				<td align="center"><input type="radio" name="Buy from us again"></td>
+			</tr>
+			<tr>
+				<td cellspacing="2px">Recommend our company to others</td>
+				<td align="center"><input type="radio" name="Recommend our company to others"></td>
+				<td align="center"><input type="radio" name="Recommend our company to others"></td>
+				<td align="center"><input type="radio" name="Recommend our company to others"></td>
+				<td align="center"><input type="radio" name="Recommend our company to others"></td>
+				<td align="center"><input type="radio" name="Recommend our company to others"></td>
+			</tr>
+			<tr bgcolor="#D3D3D3">
+				<td cellspacing="2px">Recommend our product to others</td>
+				<td align="center"><input type="radio" name="Recommend our product to others"></td>
+				<td align="center"><input type="radio" name="Recommend our product to others"></td>
+				<td align="center"><input type="radio" name="Recommend our product to others"></td>
+				<td align="center"><input type="radio" name="Recommend our product to others"></td>
+				<td align="center"><input type="radio" name="Recommend our product to others"></td>
+			</tr>
+		</tbody>
+		</table><br>
+	<br><br><br><br><br><br><br>
+	<label>Additional comments or suggestions</label><br><textarea rows="4" cols="50"></textarea>
+	<br><br><br>
+	<button type="button">Submit</button>
 </body>
 </html>
