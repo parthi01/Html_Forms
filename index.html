@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Forms</title>
+	<style>
+		body{
+			background-color: lightcyan;
+		}
+	</style>
+	<h1 style="color: lightblue; font-family: cursive;" 
+	    align="center">Feedback Form</h1>
+</head>
+<body>
+	<div>
+		<name>
+			<label>Name</label><label style="color: red;">*</label><br>
+			<input style="font-style: italic; border-color: yellow ; border-radius: 15px; width: 250px;" type="text" name="Name" placeholder="First Name">
+			<input style="font-style: italic; border-color: yellow ;border-radius: 15px; width: 250px;" type="text" name="Name" placeholder="Last Name"><br>
+		</name>
+		<email>
+			<br><label>E-Mail</label><label style="color: red;">*</label><br>
+			<input style="border-color: yellow;border-radius: 15px;font-style: italic; width: 500px;" type="email" name="E-Mail" placeholder="example@gmail.com"><br>
+		</email>
+		<experience>
+			<br><label>Experience</label><label style="color: red;">*</label><br>
+            <label style="color: yellow; fill: yellow; font-size: 15px;">⭐⭐⭐⭐⭐</label><br>
+		</experience>
+		<br><label>Overall How would you rate your experience with us?</label><br>
+		<br><label style="font-weight: bold;font-family: sans-serif;">How satisfied are you with</label><label style="color: red;">*</label><br>
+		<table border="1px">
+			<thead>
+			<tr>
+				<th> </th>
+				<th>Very Unsatisfied</th>
+				<th>Unsatisfied</th>
+				<th>Neutral</th>
+				<th>Satisfied</th>
+				<th>Very Satisfied</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Purchase</td>
+				<td></td>
+				<td></td><input type="radio" name="Purchase">
+				<!--- this radio button is not inside the table--->
+				<td></td><input type="radio" name="Purchase">
+				<td></td><input type="radio" name="Purchase">
+				<td></td><input type="radio" name="Purchase">
+			</tr>
+			<tr>
+				<td>Service</td>
+				<td></td><input type="radio" name="Service">
+				<td> </td><input type="radio" name="Service">
+				<td></td><input type="radio" name="Service">
+				<td></td><input type="radio" name="Service">
+				<td></td><input type="radio" name="Service">
+			</tr>
+			<tr>
+				<td>Company Overall</td>
+				<td></td><input type="radio" name="Company Overall">
+				<td></td><input type="radio" name="Company Overall">
+				<td></td><input type="radio" name="Company Overall">
+				<td></td><input type="radio" name="Company Overall">
+				<td></td><input type="radio" name="Company Overall">
+			</tr>
+		</tbody>
+		</table>
+	</div>
+</body>
+</html>
